@@ -1,38 +1,77 @@
+/* Estilo general para el juego */
 .App {
   text-align: center;
+  background-color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilo para el formulario de nombre de jugador */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para las opciones de juego */
+.opciones-container {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Centra las imágenes verticalmente */
+}
+
+.opcion {
+  margin: 10px; /* Espacio entre las imágenes */
+  max-width: 100px; /* Ancho máximo de las imágenes */
+}
+/* Estilo para los resultados */
+.resultados {
+  margin-top: 20px;
+}
+
+.resultado {
+  font-size: 18px;
+  margin: 10px;
+}
+
+/* Estilo para el botón de reinicio */
+button.reiniciar {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Estilo para la selección de jugada */
+.seleccion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.seleccion img {
+  max-width: 100px;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para el mensaje de ganador */
+.mensaje-ganador {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #007bff;
 }
